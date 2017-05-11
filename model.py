@@ -2,8 +2,6 @@ __author__ = 'Adamlieberman'
 from scipy.spatial import cKDTree  #Using c for pickle
 from utility import *
 import pickle
-import pandas as pd
-
 
 def generate_features(df,col,feat_cols):
     features = df.groupby([col]).mean()

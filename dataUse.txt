@@ -1,68 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Semantic UI CDN</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
-</head>
-<body>
-<style>
-.myButton {
-  -moz-box-shadow: 0px 10px 14px -7px #3e7327;
-  -webkit-box-shadow: 0px 10px 14px -7px #3e7327;
-  box-shadow: 0px 10px 14px -7px #3e7327;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
-  background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
-  background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
-  background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
-  background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
-  background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
-  background-color:#77b55a;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
-  border:1px solid #4b8f29;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:20px;
-  font-weight:bold;
-  padding:6px 20px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #5b8a3c;
-}
-.myButton:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
-  background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
-  background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
-  background-color:#72b352;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
-</style>
-      <!-- Semantic UI Code -->
-  <br><br>
-  <center><h1>Choose A Craft Beer</h1></center>
-  <br><br><br><br>
-  <center>
-  <form action="." method="post">
-  <div class="ui fluid search selection dropdown" style="width:500px">
-  <input type="hidden" name="beer">
-  <i class="dropdown icon"></i>
-  <div class="default text">Enter Beer Name</div>
-  <div class="menu" id='mnu'>
-  <div class='item' data-value='963409'><i class=''></i>! (Old Ale)</div>
+<div class='item' data-value='963409'><i class=''></i>! (Old Ale)</div>
 <div class='item' data-value='1433369'><i class=''></i>#1 Abbey Ale</div>
+<div class='item' data-value='321636'><i class=''></i>'t Goeye Goet Dubbel</div>
 <div class='item' data-value='459477'><i class=''></i>1 A.M. Ale</div>
 <div class='item' data-value='611168'><i class=''></i>10W-30 Imperial Oatmeal Stout</div>
 <div class='item' data-value='1427200'><i class=''></i>1260 Triple India Pale Ale</div>
@@ -75,6 +13,7 @@
 <div class='item' data-value='999969'><i class=''></i>3 Ravens Bronze</div>
 <div class='item' data-value='1568690'><i class=''></i>38 Redemption Black Pilesner</div>
 <div class='item' data-value='754158'><i class=''></i>420 Smokin' Hemp Porter</div>
+<div class='item' data-value='347319'><i class=''></i>5,0 Weizen</div>
 <div class='item' data-value='262428'><i class=''></i>668 The Neighbor Of The Beast (Oak Aged)</div>
 <div class='item' data-value='338114'><i class=''></i>78 Steam</div>
 <div class='item' data-value='1176281'><i class=''></i>90 Minute IPA</div>
@@ -1197,35 +1136,3 @@
 <div class='item' data-value='367520'><i class=''></i>Éphémère (Cranberry)</div>
 <div class='item' data-value='1131811'><i class=''></i>Ølfabrikken Forår 2006</div>
 <div class='item' data-value='411925'><i class=''></i>Švyturys Nefiltruotas Raw</div>
-
- </div>
- </div>
- <br><br><br><br>
-<input class='myButton' type="submit" value="Submit">
-
-</form> 
- </center>
-
-<!-- Initialize the dropdown -->
- <script>
- $('.ui.dropdown')
-  .dropdown();
-  </script>
-
-  <!-- Dynamically add dropdown items -->
-  <!-- 
-  <script>
-  $(function(){
-        $.get('/data2.txt', function(data){
-            var array = data.split('\n');
-            console.log(array);
-            var i = 0;
-  while (i < 10) {
-      document.getElementById("mnu").innerHTML += array[i]
-      
-  }
-  });
-  });
-  </script> -->
-</body>
-</html>
