@@ -57,8 +57,6 @@ def user_beer():
     print(beer3)
     print beer3_feats
 
-
-
     return render_template('recommendations.html',beer1=beer1,beer1_feats=beer1_feats,beer2=beer2,
                            beer2_feats=beer2_feats,beer3=beer3,beer3_feats=beer3_feats)
 
@@ -66,6 +64,10 @@ def user_beer():
 @app.route('/recommendations')
 def recos():
     return render_template('recommendations.html')
+
+@app.route('/index.html')
+def back():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
