@@ -10,6 +10,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/main.html')
+def index2():
+    return render_template('index2.html')
 @app.route('/',methods=['GET','POST'])
 def user_beer():
 
@@ -67,7 +70,8 @@ def recos():
 
 @app.route('/index.html')
 def back():
-    return render_template('index.html')
+    return render_template('index2.html')
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
