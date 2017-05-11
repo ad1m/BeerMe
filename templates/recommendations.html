@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Semantic UI CDN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+</head>
+<body>
+      <!-- Semantic UI Code -->
+  <br><br>
+  <center><h1>Recommendations</h1></center>
+  <br><br><br><br>
+  
+  <!-- Centering cards on full screen -->
+  <style>
+  .centered {
+  position: fixed;
+  top: 25%;
+  left: 15%;
+}
+</style>
+
+</div>
+<center class="centered">
+<div>
+<div class="ui cards">
+  <div class="card">
+    <div class="content">
+      <div class="header">
+        {{ beer1 | safe }}
+      </div>
+      <div class="meta">
+        {{ beer1_feats[4] | safe}}
+      </div>
+      <div class="description" style="text-align:left">
+      	Brewery: {{ beer1_feats[0] | safe }}<br>
+      	Taste Reviews: {{ beer1_feats[5] | safe}}<br>
+      	Aroma Review: {{ beer1_feats[2] | safe }}<br>
+      	Appearance Review: {{ beer1_feats[3] | safe }}<br>
+      	Palate Review: {{ beer1_feats[6] | safe}}<br>
+      	Overall Review: {{ beer1_feats[1] | safe }}
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div class="ui basic green button">Approve</div>
+        <div class="ui basic red button">Decline</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">
+        {{ beer2 | safe }}
+      </div>
+      <div class="meta">
+        {{ beer2_feats[4] | safe }}
+      </div>
+      <div class="description" style="text-align:left">
+      	Brewery: {{ beer2_feats[0] | safe }}<br>
+      	Taste Reviews: {{ beer2_feats[5] | safe}}<br>
+      	Aroma Review: {{ beer2_feats[2] | safe }}<br>
+      	Appearance Review: {{ beer2_feats[3] | safe }}<br>
+      	Palate Review: {{ beer2_feats[6] | safe}}<br>
+      	Overall Review: {{ beer2_feats[1] | safe }}
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div class="ui basic green button">Approve</div>
+        <div class="ui basic red button">Decline</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">
+        {{ beer3 | safe }}
+      </div>
+      <div class="meta">
+        {{ beer3_feats[4] | safe }}
+      </div>
+      <div class="description" style="text-align:left">
+      	Brewery: {{ beer3_feats[0] | safe }}<br>
+      	Taste Reviews: {{ beer3_feats[5] | safe}}<br>
+      	Aroma Review: {{ beer3_feats[2] | safe }}<br>
+      	Appearance Review: {{ beer3_feats[3] | safe }}<br>
+      	Palate Review: {{ beer3_feats[6] | safe}}<br>
+      	Overall Review: {{ beer3_feats[1] | safe }}
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div class="ui basic green button">Approve</div>
+        <div class="ui basic red button">Decline</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</center>
+
+<!-- Initialize the dropdown -->
+ <script>
+ $('.ui.dropdown')
+  .dropdown();
+  </script>
+
+
+  <!--<script>
+  $(function(){
+        $.get('data2.txt', function(data){
+            var array = data.split('\n');
+            console.log(array);
+  for (i=0; i < 800; i++) {
+      document.getElementById("mnu").innerHTML += array[i];
+      
+  }
+  });
+  });
+  </script> -->
+</body>
+</html>

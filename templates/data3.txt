@@ -1,0 +1,19 @@
+<div class='item' data-value='0'><i class=''></i>Sausa Weizen</div>
+<div class='item' data-value='1'><i class=''></i>Red Moon</div>
+<div class='item' data-value='2'><i class=''></i>Black Horse Black Beer</div>
+<div class='item' data-value='3'><i class=''></i>Sausa Pils</div>
+<div class='item' data-value='4'><i class=''></i>Cauldron DIPA</div>
+<div class='item' data-value='14'><i class=''></i>Caldera Ginger Beer</div>
+<div class='item' data-value='16'><i class=''></i>Caldera Oatmeal Stout</div>
+<div class='item' data-value='17'><i class=''></i>Caldera OBF 15</div>
+<div class='item' data-value='62'><i class=''></i>Rauch Ür Bock</div>
+<div class='item' data-value='227'><i class=''></i>Caldera Pale Ale</div>
+<div class='item' data-value='235'><i class=''></i>Pilot Rock Porter</div>
+<div class='item' data-value='272'><i class=''></i>Vas Deferens Ale</div>
+<div class='item' data-value='273'><i class=''></i>Cauldron Espresso Stout</div>
+<div class='item' data-value='304'><i class=''></i>Old Growth Imperial Stout</div>
+<div class='item' data-value='312'><i class=''></i>Dry Hop Red</div>
+<div class='item' data-value='313'><i class=''></i>Southside Strong</div>
+<div class='item' data-value='314'><i class=''></i>Caldera Märzen</div>
+<div class='item' data-value='336'><i class=''></i>Caldera Rose Petal (Kettle Series)</div>
+<div class='item' data-value='603'><i class=''></i>The Highland Stagger</div>
