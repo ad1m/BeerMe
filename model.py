@@ -55,11 +55,11 @@ def format_reccomended_stats(reverse_dict_brewery, reverse_dict_style,beer_feats
         print
         bn = int(i[0])
         sn = int(i[4])
-        i[0] = str(reverse_dict_brewery[bn]) #get the name
+        i[0] = string_handler(reverse_dict_brewery[bn]) #get the name
         i[1] = round(float(i[1]),2)
         i[2] = round(float(i[2]),2)
         i[3] = round(float(i[3]),2)
-        i[4] = str(reverse_dict_style[sn])#get the style
+        i[4] = string_handler(reverse_dict_style[sn])#get the style
         i[5] = round(float(i[5]),2)
         i[6] = round(float(i[6]),2)
         new_feats.append(i)

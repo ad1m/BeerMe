@@ -1,4 +1,7 @@
 __author__ = 'Adamlieberman'
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 import os
 from flask import Flask, render_template, request
 from utility import *
@@ -57,8 +60,8 @@ def user_beer():
     beer3 = str(recommended_beers[2])
     beer3_feats = formatted_feats[2]
 
-    print(beer3)
-    print beer3_feats
+    print(beer2)
+    print str(beer2_feats[4])
 
     return render_template('recommendations.html',beer1=beer1,beer1_feats=beer1_feats,beer2=beer2,
                            beer2_feats=beer2_feats,beer3=beer3,beer3_feats=beer3_feats)
