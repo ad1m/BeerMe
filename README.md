@@ -1,7 +1,7 @@
-#BeerMe: 
+# BeerMe: 
 BeerMe is a machine learning application, hosted at crafte.herokuapp.com, to recommend craft beers based on a user selected beer. 
 
-##Directory Structure
+## Directory Structure
 * features.p - a pickle file of a dataframe that holds the feature vectors for our data where the beer name is the index
 * namez.p - a pickle file of a dataframe that is an alteration of features.p, where the index is a range(0,n) and the beer name is a column 
 * reverse\_dict\_brewery.p - a pickle file of a dictionary for reverse look up of integer to brewery name 
@@ -28,22 +28,22 @@ BeerMe is a machine learning application, hosted at crafte.herokuapp.com, to rec
 * utility.py - python file for loading data and processing it 
 * Procfile - required for hosting through Heroku
 
-##Hosted Application
+## Hosted Application
 The application can be found at crafte.herokuapp.com. Please note that this is hosted on a free account so Heroku puts apps to sleep. Thus, the application might take a few seconds to initially boot up if it has been asleep. 
 
-##Runing Application
+## Runing Application
 To run the application make sure port 5000 is available on your localhost. Then run app.py and navigate to http://localhost:5000 in a web browser of your choice.
 
 
-##Technology Details
-###Backend: 
+## Technology Details
+### Backend: 
 The backend of this application was written in python 2.x. 
 
-###Frontend: 
+### Frontend: 
 The frontend was written with standard HTML, CSS, and JavaScript. 
 
-###Microframework: 
+### Microframework: 
 Flask and Jinja2 were used to bridge the backend to the fronend and pass data for view on the frontend. 
 
-###Hosting: 
+### Hosting: 
 Heroku was used to host the flask application at crafte.herokuapp.com. 
